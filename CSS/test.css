@@ -2,6 +2,10 @@ body{
     min-width:1255px;
     overflow:auto;
 }
+a{
+    text-decoration: none !important;
+    color: black;
+}
 .bg-grey{
     background-color: rgb(240,242,240);
 }
@@ -13,6 +17,12 @@ body{
 }
 .card{
    border-bottom: none;
+}
+.site-name{
+    font-style: italic;
+    font-weight: bold;
+    font-family:Helvetica;
+    color:#424146 !important;
 }
 .card-header{
     font-size: 20px;
