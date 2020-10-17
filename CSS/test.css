@@ -1,0 +1,76 @@
+body{
+    min-width:1255px;
+    overflow:auto;
+}
+.bg-grey{
+    background-color: rgb(240,242,240);
+}
+.bg-white{
+    background-color: white;
+}
+.show-border{
+    border: 1px #F8F8F8 solid;
+}
+.card{
+   border-bottom: none;
+}
+.card-header{
+    font-size: 20px;
+    margin-bottom: -20px;
+    font-weight: bold;
+    border-bottom: none;
+    background-color: white;
+}
+.card-footer{
+    border-top: none;
+    background-color: white;
+}
+.agree-bottom{
+    padding: 2px 7px;
+    color:#259EDD ;
+}
+.disagree-bottom{
+    padding: 2px 7px;
+    color:#DF4633;
+}
+.icon-1_5{
+    width: 1.5rem;
+}
+.other-bottom{
+    padding: 2px 7px;
+    color:#707070;
+}
+.false-border{
+    border: #DF4633 1px solid;
+    border-bottom: none;
+}
+.true-border{
+    border: #5AB269 1px solid;
+    border-bottom: none;
+}
+.top-right-icon{
+    position: absolute;
+    float: right;
+    bottom: 5px;
+    right: 0px;
+    z-index: 100;
+    width: 6rem;
+}
+.red-bg{
+    background-color: red;
+}
+.black-bg{
+    background-color: black;
+}
+.br-line-top{
+    border-top: black solid 5px;
+}
+.main-border{
+    border: white solid 1px;
+}
+.active-blue{
+    color: dodgerblue;
+}
+.active-bold{
+    font-weight: bold;
+}
