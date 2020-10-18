@@ -61,10 +61,16 @@ a{
 .top-right-icon{
     position: absolute;
     float: right;
-    bottom: 5px;
+    top: 0px;
     right: 0px;
     z-index: 100;
     width: 6rem;
+}
+.ml-comment{
+    margin-left:3.4rem;
+}
+.disappear{
+    display: none;
 }
 .red-bg{
     background-color: red;

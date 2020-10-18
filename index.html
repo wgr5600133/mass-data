@@ -6,6 +6,7 @@
     <script src="./JS/jquery-3.5.1.slim.min.js"></script>
     <script src="./JS/popper.min.js"></script>
     <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/main.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Metis</title>
@@ -43,76 +44,200 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-8 ml-5 mr-5 bg-white show-border rounded">
-                <span class="ml-2 mr-2 active-blue" style="margin-top: 20px;display: inline-block">Recommend</span>
-                <span class="ml-2 mr-2"><a href="#">Hot</a></span>
+                <div id="content-container-control">
+                    <span class="ml-2 mr-2" style="margin-top: 20px;display: inline-block">
+                        <a href="javascript:;" class="active-blue" id="recommend-button">Recommend</a>
+                    </span>
+                    <span class="ml-2 mr-2">
+                        <a href="javascript:;" id="hot-button">Hot</a>
+                    </span>
+                </div>
                 <hr>
-                <div class="card true-border">
-                    <div class="card-header">Is Mark Zuckerberg a robot? </div>
-                    <div class="card-body">
-                        <div class="d-inline-flex">
-                            <img src="./icons/test_pic.jpeg" style="width: 14rem" class="rounded">
-                            <div class="col">IT IS PROVEN: https://twitter.com/i/status/984051771323682818</div>
+                <div id="content-container">
+                    <div class="card true-border">
+                        <div class="card-header">Is Mark Zuckerberg a robot? </div>
+                        <div class="card-body">
+                            <div class="d-inline-flex">
+                                <img src="./icons/test_pic.jpeg" style="width: 14rem" class="rounded">
+                                <div class="col">IT IS PROVEN: https://twitter.com/i/status/984051771323682818</div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-inline-flex align-items-center">
+                            <a class="agree-bottom rounded" href="#"><img src="./icons/agree.png" class="icon-1_5"> True 5K</a>
+                            <a class="disagree-bottom  mr-4 rounded" href="#"><img src="./icons/disagree.png" class="icon-1_5"> False 0</a>
+                            <a class="other-bottom  ml-2 rounded" aria-label="comment" href="javascript:;" ><img src="./icons/comment.png" class="icon-1_5"> 1000 Comments</a>
+                            <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/share.png" class="icon-1_5"> Share</a>
+                            <a class="other-bottom  ml-2 rounded" href="javascript:;"><img src="./icons/like.png" class="icon-1_5"> Like</a>
+                            <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/more.png" class="icon-1_5"></a>
+                            <img src="./icons/true.png" alt="" class="top-right-icon">
+                        </div>
+                        <div class="card-footer disappear comment-container">
+                            <div class="border pt-3">
+                                <div class="comment-header font-weight-bold ml-2">
+                                    1000 Comment
+                                </div>
+                                <hr>
+                                <div class="comment">
+                                    <div class="d-flex">
+                                        <div class="p-2"><img src="./icons/login.png" class="icon-1_5 ml-2"></div>
+                                        <div class="p-2">hello world</div>
+                                        <div class="ml-auto p-2">2020-10-18</div>
+                                    </div>
+                                    <div class="ml-comment">I think your are correct.</div>
+                                    <div class="ml-comment mt-2">
+                                        <a al><img src="./icons/like-active.png" class="icon-1_5">111</a>
+                                        <a><img src="./icons/dislike-active.png" class="icon-1_5">0</a>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="mr-5 ml-5">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Proofs">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-footer d-inline-flex align-items-center">
-                        <a class="agree-bottom rounded" href="#"><img src="./icons/agree.png" class="icon-1_5"> True 5K</a>
-                        <a class="disagree-bottom  mr-4 rounded" href="#"><img src="./icons/disagree.png" class="icon-1_5"> False 0</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/comment.png" class="icon-1_5"> 1000 Comments</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/share.png" class="icon-1_5"> Share</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/like.png" class="icon-1_5"> Like</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/more.png" class="icon-1_5"></a>
-                        <a href="#"><img src="./icons/true.png" alt="" class="top-right-icon"></a>
-                    </div>
-                </div>
-                <div class="card false-border">
-                    <div class="card-header">Title</div>
-                    <div class="card-body">
-                        <div class="d-inline-flex">
-                            <div class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Orci phasellus egestas tellus rutrum. Porttitor rhoncus dolor purus non. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Blandit libero volutpat sed cras. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Nec nam aliquam sem et tortor consequat. Ut tellus elementum sagittis vitae et. Faucibus vitae aliquet nec ullamcorper sit amet. Mi eget mauris pharetra et. Nisl nunc mi ipsum faucibus vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Elementum facilisis leo vel fringilla est. In nulla posuere sollicitudin aliquam ultrices sagittis. Porta nibh venenatis cras sed. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Sollicitudin nibh sit amet commodo. In eu mi bibendum neque.</div>
+                    <div class="card false-border">
+                        <div class="card-header">Title</div>
+                        <div class="card-body">
+                            <div class="d-inline-flex">
+                                <div class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Orci phasellus egestas tellus rutrum. Porttitor rhoncus dolor purus non. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Blandit libero volutpat sed cras. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Nec nam aliquam sem et tortor consequat. Ut tellus elementum sagittis vitae et. Faucibus vitae aliquet nec ullamcorper sit amet. Mi eget mauris pharetra et. Nisl nunc mi ipsum faucibus vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Elementum facilisis leo vel fringilla est. In nulla posuere sollicitudin aliquam ultrices sagittis. Porta nibh venenatis cras sed. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Sollicitudin nibh sit amet commodo. In eu mi bibendum neque.</div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-inline-flex align-items-center">
+                            <a class="agree-bottom rounded" href="#"><img src="./icons/agree.png" class="icon-1_5"> True 5K</a>
+                            <a class="disagree-bottom  mr-4 rounded" href="#"><img src="./icons/disagree.png" class="icon-1_5"> False 0</a>
+                            <a class="other-bottom  ml-2 rounded" aria-label="comment" href="javascript:;" ><img src="./icons/comment.png" class="icon-1_5"> 1000 Comments</a>
+                            <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/share.png" class="icon-1_5"> Share</a>
+                            <a class="other-bottom  ml-2 rounded" href="javascript:;"><img src="./icons/like.png" class="icon-1_5"> Like</a>
+                            <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/more.png" class="icon-1_5"></a>
+                            <img src="./icons/false.png" alt="" class="top-right-icon">
+                        </div>
+                        <div class="card-footer disappear comment-container">
+                            <div class="border pt-3">
+                                <div class="comment-header font-weight-bold ml-2">
+                                    1000 Comment
+                                </div>
+                                <hr>
+                                <div class="comment">
+                                    <div class="d-flex">
+                                        <div class="p-2"><img src="./icons/login.png" class="icon-1_5 ml-2"></div>
+                                        <div class="p-2">hello world</div>
+                                        <div class="ml-auto p-2">2020-10-18</div>
+                                    </div>
+                                    <div class="ml-comment">I think your are correct.</div>
+                                    <div class="ml-comment mt-2">
+                                        <a al><img src="./icons/like-active.png" class="icon-1_5">111</a>
+                                        <a><img src="./icons/dislike-active.png" class="icon-1_5">0</a>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="mr-5 ml-5">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Proofs">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-footer d-inline-flex align-items-center">
-                        <a class="agree-bottom rounded" href="#"><img src="./icons/agree.png" class="icon-1_5"> True 1K</a>
-                        <a class="disagree-bottom  mr-4 rounded" href="#"><img src="./icons/disagree.png" class="icon-1_5"> False 4K</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/comment.png" class="icon-1_5"> 1000 Comments</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/share.png" class="icon-1_5"> Share</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/like.png" class="icon-1_5"> Like</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/more.png" class="icon-1_5"></a>
-                        <a href="#"><img src="./icons/false.png" alt="" class="top-right-icon"></a>
-                    </div>
-                </div>
-                <div class="card false-border">
-                    <div class="card-header">Title</div>
-                    <div class="card-body">
-                        <div class="d-inline-flex">
-                            <div class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Orci phasellus egestas tellus rutrum. Porttitor rhoncus dolor purus non. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Blandit libero volutpat sed cras. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Nec nam aliquam sem et tortor consequat. Ut tellus elementum sagittis vitae et. Faucibus vitae aliquet nec ullamcorper sit amet. Mi eget mauris pharetra et. Nisl nunc mi ipsum faucibus vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Elementum facilisis leo vel fringilla est. In nulla posuere sollicitudin aliquam ultrices sagittis. Porta nibh venenatis cras sed. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Sollicitudin nibh sit amet commodo. In eu mi bibendum neque.</div>
+                    <div class="card false-border">
+                        <div class="card-header">Title</div>
+                        <div class="card-body">
+                            <div class="d-inline-flex">
+                                <div class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Orci phasellus egestas tellus rutrum. Porttitor rhoncus dolor purus non. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Blandit libero volutpat sed cras. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Nec nam aliquam sem et tortor consequat. Ut tellus elementum sagittis vitae et. Faucibus vitae aliquet nec ullamcorper sit amet. Mi eget mauris pharetra et. Nisl nunc mi ipsum faucibus vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Elementum facilisis leo vel fringilla est. In nulla posuere sollicitudin aliquam ultrices sagittis. Porta nibh venenatis cras sed. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Sollicitudin nibh sit amet commodo. In eu mi bibendum neque.</div>
+                            </div>
+                        </div>
+                        <div class="card-footer d-inline-flex align-items-center">
+                            <a class="agree-bottom rounded" href="#"><img src="./icons/agree.png" class="icon-1_5"> True 5K</a>
+                            <a class="disagree-bottom  mr-4 rounded" href="#"><img src="./icons/disagree.png" class="icon-1_5"> False 0</a>
+                            <a class="other-bottom  ml-2 rounded" aria-label="comment" href="javascript:;" ><img src="./icons/comment.png" class="icon-1_5"> 1000 Comments</a>
+                            <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/share.png" class="icon-1_5"> Share</a>
+                            <a class="other-bottom  ml-2 rounded" href="javascript:;"><img src="./icons/like.png" class="icon-1_5"> Like</a>
+                            <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/more.png" class="icon-1_5"></a>
+                            <img src="./icons/false.png" alt="" class="top-right-icon">
+                        </div>
+                        <div class="card-footer disappear comment-container">
+                            <div class="border pt-3">
+                                <div class="comment-header font-weight-bold ml-2">
+                                    1000 Comment
+                                </div>
+                                <hr>
+                                <div class="comment">
+                                    <div class="d-flex">
+                                        <div class="p-2"><img src="./icons/login.png" class="icon-1_5 ml-2"></div>
+                                        <div class="p-2">hello world</div>
+                                        <div class="ml-auto p-2">2020-10-18</div>
+                                    </div>
+                                    <div class="ml-comment">I think your are correct.</div>
+                                    <div class="ml-comment mt-2">
+                                        <a al><img src="./icons/like-active.png" class="icon-1_5">111</a>
+                                        <a><img src="./icons/dislike-active.png" class="icon-1_5">0</a>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="mr-5 ml-5">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Proofs">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-footer d-inline-flex align-items-center">
-                        <a class="agree-bottom rounded" href="#"><img src="./icons/agree.png" class="icon-1_5"> True 1K</a>
-                        <a class="disagree-bottom  mr-4 rounded" href="#"><img src="./icons/disagree.png" class="icon-1_5"> False 4K</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/comment.png" class="icon-1_5"> 1000 Comments</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/share.png" class="icon-1_5"> Share</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/like.png" class="icon-1_5"> Like</a>
-                        <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/more.png" class="icon-1_5"></a>
-                        <a href="#"><img src="./icons/false.png" alt="" class="top-right-icon"></a>
-                    </div>
-                </div>                <div class="card false-border">
-                <div class="card-header">Title</div>
-                <div class="card-body">
-                    <div class="d-inline-flex">
-                        <div class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Orci phasellus egestas tellus rutrum. Porttitor rhoncus dolor purus non. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Blandit libero volutpat sed cras. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Nec nam aliquam sem et tortor consequat. Ut tellus elementum sagittis vitae et. Faucibus vitae aliquet nec ullamcorper sit amet. Mi eget mauris pharetra et. Nisl nunc mi ipsum faucibus vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Elementum facilisis leo vel fringilla est. In nulla posuere sollicitudin aliquam ultrices sagittis. Porta nibh venenatis cras sed. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Sollicitudin nibh sit amet commodo. In eu mi bibendum neque.</div>
-                    </div>
-                </div>
-                <div class="card-footer d-inline-flex align-items-center">
-                    <a class="agree-bottom rounded" href="#"><img src="./icons/agree.png" class="icon-1_5"> True 1K</a>
-                    <a class="disagree-bottom  mr-4 rounded" href="#"><img src="./icons/disagree.png" class="icon-1_5"> False 4K</a>
-                    <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/comment.png" class="icon-1_5"> 1000 Comments</a>
-                    <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/share.png" class="icon-1_5"> Share</a>
-                    <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/like.png" class="icon-1_5"> Like</a>
-                    <a class="other-bottom  ml-2 rounded" href="#"><img src="./icons/more.png" class="icon-1_5"></a>
-                    <a href="#"><img src="./icons/false.png" alt="" class="top-right-icon"></a>
-                </div>
             </div>
             </div>
             <div class="col ml-5 mr-5 rounded bg-white show-border" style="height: 94px">
