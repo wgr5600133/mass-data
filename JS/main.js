@@ -20,6 +20,10 @@ $(document).ready(function () {
             }
         }
     })
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+
     function DeactivateOtherButton(id) {
         /**
          * Deactivate other button expert input button in context-container control field
